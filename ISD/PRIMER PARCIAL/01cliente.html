@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica Cliente-Servidor</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2eafa;
+            margin: 40px;
+        }
+
+        .contenedor {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #704080;
+        }
+
+        h2 {
+            color: #704080;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .resultado {
+            background-color: #f5eef8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Práctica Cliente-Servidor</h1>
+
+    <h2>Objetivo</h2>
+
+    <p>
+        El objetivo de esta práctica fue probar la arquitectura
+        cliente-servidor mediante una petición GET a una API para
+        obtener información de los talleres.
+    </p>
+
+    <h2>Captura del código original</h2>
+
+    <img src="img_cap.png" alt="Captura del resultado">
+
+    <h2>¿Qué pasó?</h2>
+
+    <p>
+        Al ejecutar el código original se presentó un error porque la
+        variable inicio no fue definida.
+    </p>
+
+    <div class="resultado">
+        <strong>Error:</strong> ReferenceError: inicio is not defined
+    </div>
+
+    <h2>¿Se conectó con el servidor?</h2>
+
+    <p>
+        No se completó la conexión con el servidor. El programa se detuvo
+        antes de realizar correctamente la petición debido al error
+        encontrado en la línea 9.
+    </p>
+
+    <h2>¿Qué elementos se obtuvieron?</h2>
+
+    <p>
+        Se obtuvo el mensaje de error, la línea donde ocurrió el problema,
+        la versión de Node.js utilizada (v22.20.0) y el código de salida 1.
+        No se obtuvo la información de los talleres ni la respuesta JSON
+        del servidor.
+    </p>
+
+    <h2>Conclusión</h2>
+
+    <p>
+        La práctica permitió observar cómo un cliente intenta comunicarse
+        con un servidor. En este caso, la comunicación no pudo completarse
+        debido a un error en el código original, específicamente porque
+        la variable inicio no estaba definida.
+    </p>
+
+</div>
+
+</body>
+</html>
