@@ -1,6 +1,6 @@
 //vamos a progrmar un cliente, mediante el cual vamos a probar la arquitectura de cliente-servidor
 
-const API_URL = "https://proyectobackcecyt9.onrender.com";
+const API_URL = "https://proyectobackcecyt9.onrender.com/api/talleres";
 
 async function main(){
     //atiende a todos de forma asincrona,, es decir, no se bloquea mientras espera la respuesta del servidor
@@ -16,5 +16,6 @@ async function main(){
     console.log(JSON.stringify(cuerpo, null, 2));
 
 }
+// en pruebas el api se llama empoy
 
 main();
