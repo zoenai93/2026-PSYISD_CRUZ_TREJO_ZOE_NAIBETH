@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./landing_page_medacz.css">
+    <title>MEDACZ - Tecnología que cuida</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <div class="logo-icon">M</div>
+                <span class="logo-text">MEDACZ</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#planeacion">Planeación Estratégica</a></li>
+                <li><a href="#servicios">Productos y Servicios</a></li>
+                <li><a href="#contacto" class="btn-header">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <span class="hero-badge">Mantenimiento de Equipo Médico</span>
+            <h1 class="hero-title">Tecnología que cuida</h1>
+            <p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="quienes-somos" class="flex-section">
+        <div class="section-header">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                <p>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+            </div>
+            <div class="about-image">
+                <span>[ Placeholder Imagen ]</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="planeacion" class="flex-section" style="background-color: #EBF1F5;">
+        <div class="section-header">
+            <h2 class="section-title">Planeación Estratégica</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="planning-container">
+            <div class="plan-card">
+                <div class="plan-card-icon">M</div>
+                <h3>Misión</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+            </div>
+            <div class="plan-card">
+                <div class="plan-card-icon">V</div>
+                <h3>Visión</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+            </div>
+            <div class="plan-card">
+                <div class="plan-card-icon">O</div>
+                <h3>Objetivos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="flex-section">
+        <div class="section-header">
+            <h2 class="section-title">Productos y Servicios</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="services-container">
+            <div class="service-item">
+                <span class="service-badge">Servicio 01</span>
+                <div class="service-info">
+                    <h3>Lorem Ipsum Servicio A</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <span class="service-badge">Servicio 02</span>
+                <div class="service-info">
+                    <h3>Lorem Ipsum Servicio B</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <span class="service-badge">Servicio 03</span>
+                <div class="service-info">
+                    <h3>Lorem Ipsum Servicio C</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="flex-section">
+        <div class="section-header">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Lorem Ipsum Contacto</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ante dapibus diam.</p>
+                <p><strong>Email:</strong> placeholder@medacz.com</p>
+                <p><strong>Teléfono:</strong> +00 123 456 789</p>
+            </div>
+            <form class="contact-form" action="#" method="post" onclick="event.preventDefault();">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Lorem Ipsum">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="placeholder@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="4" placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>MEDACZ - Mantenimiento de equipos médicos © 2026</p>
+            <p>Lorem Ipsum Footer Text</p>
+        </div>
+    </footer>
+
+</body>
+</html>
