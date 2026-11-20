@@ -1,4 +1,6 @@
-
+// Pruebas automáticas de la demo:  npm run probar
+// Comprueban, sin navegador, lo mismo que se ve en clase. Cada "navegador" es un frasco de cookies.
+// Usan su propia base (demo_sesiones_pruebas), que crean desde cero: no tocan tus datos.
 const { crearApp, NOMBRE_COOKIE } = require('../app');
 const { crearPool } = require('../db');
 const { crearBaseDeDatos } = require('../bd/crear-bd');
@@ -21,6 +23,7 @@ async function prueba(nombre, fn) {
   }
 }
 
+// Arranca la app con una configuración y regresa su URL y una función para apagarla.
 function arrancar(cambios = {}) {
   const app = crearApp({ ...configBase, almacen: 'mysql', ...cambios }, pool);
   return new Promise((resolve) => {
@@ -30,6 +33,7 @@ function arrancar(cambios = {}) {
   });
 }
 
+// Un "navegador": guarda la cookie de sesión y la manda en cada petición.
 function navegador(url) {
   const nav = {
     cookie: null,
@@ -56,6 +60,7 @@ function navegador(url) {
 
 const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Cuántas filas de la tabla sessions tienen a ese usuario.
 async function filasDeSesion(usuario) {
   const [filas] = await pool.query('SELECT data FROM sessions');
   return filas.filter((f) => JSON.parse(f.data).usuario?.usuario === usuario).length;
@@ -180,6 +185,7 @@ async function filasDeSesion(usuario) {
 
   cerrar();
 
+  // ----- Configuraciones distintas -----
 
   const sinRegenerar = await arrancar({ regenerarAlEntrar: false });
   await prueba('regenerarAlEntrar=false: fijación de sesión, el atacante queda dentro', async () => {

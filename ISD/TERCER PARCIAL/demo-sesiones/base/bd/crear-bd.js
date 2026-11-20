@@ -1,4 +1,10 @@
-
+// Crea (o vuelve a crear desde cero) la base de datos con sus tablas y usuarios de ejemplo.
+//
+//   npm run bd
+//
+// OJO: borra la base si ya existía. Usa el MISMO archivo que se importa en Workbench (demo_sesiones.sql):
+// se quitan sus líneas DROP/CREATE/USE para poder crear la base con otro nombre (las pruebas usan
+// "demo_sesiones_pruebas"). Se hace desde Node para que los acentos queden bien en Windows.
 const fs = require('fs');
 const path = require('path');
 const mysql = require('mysql2/promise');

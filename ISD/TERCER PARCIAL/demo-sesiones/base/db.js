@@ -1,4 +1,4 @@
-
+// Conexión a MySQL. Lee los datos de tu archivo .env.
 const path = require('path');
 const mysql = require('mysql2/promise');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
